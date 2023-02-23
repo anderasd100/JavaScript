@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Estrutura básica da linguagem JS </title>
+    <!-- HTML 4 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- HTML5 -->
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h3>Estudo básico</h3>
+    <script language="javascript">
+        <!--
+         /* Objetivos: Capturar o nome de usuárop e apresentar uma saudação personalizada
+         Definir as variáveis com o prefixo js_
+         Elementos de Entrada: método prompt do objeto windows
+         Elementos de saída: método Write do objeto document
+         */
+        /* Definição de variáveis */
+        var js_nome;
+
+        /*Entrada de dados*/
+        js_nome = window.prompt('Entre com seu nome: ', 'Digite seu nome nesta caixa');
+        /* Saída de dados */
+        document.write('Ol\u00e1 ' + js_nome + ' Seja Bem Vindo!'); // Mensagem de Saudação Personalizada
+        alert("Obrigado por informar seu nome " + js_nome + '!')
+//-->
+    </script>
+</body>
+
+</html>

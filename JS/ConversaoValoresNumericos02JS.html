@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conversão de valores</title>
+    <!-- HTML 4 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- HTML5 -->
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h3> Conversão de valores Numéricos</h3>
+
+    <!-- Definição de Formulário -->
+    <form name="Formsoma" action=" " method="post">
+        Digite o primeiro número............: <input type="number" name="n_primeiron" />
+        <p></p>
+        Digite o segundo número...: <input type="number" name="n_segundon" />
+        <p></p>
+        <input type="button" name="btn_soma" value="Somar" onclick="soma()" />
+        <input type="reset" name="btn_cancela" value="Cancelar" />
+    </form>
+
+    <!-- Definição do código JavaScript -->
+    <script language="javascript">
+        <!--
+        /* 	Objetivo: 
+         1- Informar o primeiro valor.
+         2- Informar o segundo valor.
+         3- Efetuar a somatória dos valores e armazenar o resultado em uma terceira variável.
+         4- Mostrar o resultado da somatória
+        
+        /* Definição das Variáveis */
+        var n1;
+        var n2;
+        var resultado;
+
+        function soma() {
+
+            /* Entrada de Dados */
+            n1 = document.Formsoma.n_primeiron.value;
+            n2 = document.Formsoma.n_segundon.value;
+
+            /* Processamento de Dados: */
+            /*Number ou Numeric, conheceremos os seguintes métodos de conversão:
+            
+            parseInt( ) – faz a conversão de valores inteiros
+            parseFloat( ) – faz a conversão de valores reais (flutuantes/fracionários).
+            */
+            resultado = parseInt(n1) + parseInt(n2);
+
+            /* Saída de Dados */
+            window.alert('O resultado da soma é: ' + resultado);
+        }
+//-->
+    </script>
+</body>
+
+</html>

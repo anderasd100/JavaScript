@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Conversão para valores Numéricos </title>
+    <!-- HTML 4 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- HTML5 -->
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h3>Estudo básico</h3>
+    <script language="javascript">
+        <!--
+         /* Objetivos: 
+         1- Informar o primeiro valor.
+         2- Informar o segundo valor.
+         3- Efetuar a somatória dos valores e armazenar o resultado em uma terceira variável.
+         4- Mostrar o resultado da somatória
+         */
+        /* Definição de variáveis */
+        var n1;
+        var n2;
+        var soma;
+
+
+        /*Entrada de dados*/
+        n1 = window.prompt('Informe o primeiro número: ', 'Digite aqui');
+        n2 = window.prompt('Informe o segundo número: ', 'Digite aqui');
+
+        /* Saída de dados:*/
+        /*Number ou Numeric, conheceremos os seguintes métodos de conversão:
+        
+        parseInt( ) – faz a conversão de valores inteiros
+        parseFloat( ) – faz a conversão de valores reais (flutuantes/fracionários).
+        */
+        soma = parseInt(n1) + parseInt(n2);
+        document.write('A soma dos números informados é: ' + soma);
+//-->
+    </script>
+</body>
+
+</html>
